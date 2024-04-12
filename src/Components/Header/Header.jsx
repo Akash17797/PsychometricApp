@@ -99,17 +99,12 @@ function Header() {
                             </li>
 
                             <li className="relative" onMouseEnter={handleDevSubMenuToggle} onMouseLeave={handleDevSubMenuToggle}>
-                                <NavLink to='./Development' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
-                                    Development
+                                <NavLink to='./Personality_Development' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                Personality Development
                                 </NavLink>
                                 {devSubMenuOpen && (
                                     <div className="absolute bg-white border-2 border-gray-200 py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2">
-                                            <li>
-                                                <NavLink to='./Development/Personality_Development' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
-                                                    Personality Development
-                                                </NavLink>
-                                            </li>
                                             <li>
                                                 <NavLink to='./Development/Psychometric_Testing' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
                                                     Psychometric Testing
