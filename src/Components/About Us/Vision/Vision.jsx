@@ -2,7 +2,7 @@ import React from 'react';
 
 const Vision = () => {
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-br from-green-400 to-blue-500 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           To Create Meaningful Impact Through Career Guidance and Counseling

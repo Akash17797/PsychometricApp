@@ -8,7 +8,16 @@ import Home from './Components/Home/Home.jsx'
 import Mission from './Components/About Us/Mission/Mission.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Vision from './Components/About Us/Vision/Vision.jsx'
-
+import Drug from './Components/Drug/Drug.jsx'
+import Counselling from './Components/Counselling/Counselling.jsx'
+import EducationCounselling from './Components/Counselling/EducationCounselling.jsx'
+import CareerCounselling from './Components/Counselling/CareerCounselling.jsx'
+import PsychologicalCounselling from './Components/Counselling/PsychologicalCounselling.jsx'
+import BehavioralCounselling from './Components/Counselling/BehavioralCounselling.jsx'
+import MaritalCounselling from './Components/Counselling/MaritalCounselling.jsx'
+import PersonalityDev from './Components/Personality/PersonalityDev.jsx'
+import Coach_Mentor from './Components/Personality/Coach_Mentor.jsx'
+import Psychometric from './Components/Psychometric/Psychometric.jsx'
 
 
 // const router = createBrowserRouter([           
@@ -49,11 +58,23 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>}/>
-      <Route path='/about' element={<About/>}> </Route>
+      <Route path='/about' element={<About/>}/>
         <Route path='/about/vision' element={<Vision/>}/>
         <Route path='/about/mission' element={<Mission/>}/>
-      
-      
+
+      <Route path='/counselling' element={<Counselling/>}/>
+        <Route path='/counselling/educational_counselling' element={<EducationCounselling/>}/>
+        <Route path='/counselling/Career_Counselling' element={<CareerCounselling/>}/>
+        <Route path='/counselling/Psychological_Counselling' element={<PsychologicalCounselling/>}/>
+        <Route path='/counselling/Behavioral_Counselling' element={<BehavioralCounselling/>}/>
+        <Route path='/counselling/Marital_Counselling' element={<MaritalCounselling/>}/>
+
+      <Route path='/Personality_Development' element={<PersonalityDev/>}/>
+        <Route path='/Personality_Development/Coaching_&_Mentoring' element={<Coach_Mentor/>}/>  
+
+      <Route path='/psychometric_testing' element={<Psychometric/>}/>  
+
+      <Route path='/drug_abuse' element={<Drug/>}/>
       <Route path='/contact' element={<Contact/>}/>
                
     </Route>

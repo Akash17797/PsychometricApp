@@ -20,7 +20,7 @@ function Header() {
 
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+            <nav className="bg-gradient-to-br from-green-400 to-blue-500 border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
@@ -62,35 +62,35 @@ function Header() {
                                 )}
                             </li>
                             <li className="relative" onMouseEnter={handleCounsellingSubMenuToggle} onMouseLeave={handleCounsellingSubMenuToggle}>
-                                <NavLink to='./Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                <NavLink to='./counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
                                     Counselling
                                 </NavLink>
                                 {counsellingSubMenuOpen && (
                                     <div className="absolute bg-white border-2 border-gray-200 py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2">
                                             <li>
-                                                <NavLink to='./Counselling/Educational_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                                <NavLink to='./counselling/educational_counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
                                                     Educational Counselling
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='./Counselling/Career_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                                <NavLink to='./counselling/Career_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
                                                     Career Counselling
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='./Counselling/Psychological_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                                <NavLink to='./counselling/Psychological_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
                                                     Psychological Counselling
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='./Counselling/Personal_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
-                                                    Personal Counselling
+                                                <NavLink to='./counselling/Behavioral_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                                Behavioral Counselling
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='./Counselling/Family_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
-                                                    Family Counselling
+                                                <NavLink to='./counselling/Marital_Counselling' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                                    Marital Counselling
                                                 </NavLink>
                                             </li>
                                         </ul>
@@ -105,13 +105,9 @@ function Header() {
                                 {devSubMenuOpen && (
                                     <div className="absolute bg-white border-2 border-gray-200 py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2">
+                                            
                                             <li>
-                                                <NavLink to='./Development/Psychometric_Testing' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
-                                                    Psychometric Testing
-                                                </NavLink>
-                                            </li>
-                                            <li>
-                                                <NavLink to='./Development/Coaching_&_Mentoring' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                                <NavLink to='./Personality_Development/Coaching_&_Mentoring' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
                                                     Coaching & Mentoring
                                                 </NavLink>
                                             </li>
@@ -119,7 +115,16 @@ function Header() {
                                     </div>
                                 )}
                             </li>
-
+                            <li>
+                                <NavLink to='./psychometric_testing' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                Psychometric Testing
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to='./drug_abuse' className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0">
+                                    Drug Abuse
+                                </NavLink>
+                            </li>
 
 
                             <li>
