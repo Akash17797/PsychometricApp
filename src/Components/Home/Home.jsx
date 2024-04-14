@@ -11,18 +11,20 @@ function Home() {
                             Psychometric Testing
                             <span className="hidden sm:block text-2xl">by Ramvir Singh</span>
                         </h2>
+                        <div className='bg-gradient-to-br from-green-700 to-blue-700 p-4 rounded-full '>
                         <p className="text-2xl font-bold sm:text-center">
                             Did you know?
-                        </p>
-                        <p className='sm:text-center text-balance'>
+                        </p> <br />
+                       
+                        <p className='sm:text-center text-balance p-2'>
                             Did you know that having an empathetic, attuned councelor can actually increase the thickness of your Pre-frontal neo cortex (the Problem Solving, higher level thinking of our brain).
                             When trained caregivers join us on our journey of dreaming, healing and transformation, it not only changes our lives, but also our brain structure.
 
                             Very Cool! Right?
                         </p>
-
+                        </div>
                         <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-yellow-600 rounded-lg hover:opacity-75"
                             to="/"
                         >
                             <svg
@@ -40,7 +42,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+                <div className=" absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
                     <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
                 </div>
             </aside>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -9,8 +9,8 @@ function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                                className="mr-3 h-16"
+                                src="\src\images\Icon.jpg"
+                                className="mr-3 h-16 w-16 sm:h-40 sm:w-40 rounded-full filter drop-shadow-2xl"
                                 alt="Logo"
                             />
                         </Link>
@@ -78,7 +78,7 @@ function Footer() {
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-900 hover:text-gray-900">
+                        <Link to="https://www.facebook.com/ramvir.singh.39" className="text-gray-900 hover:text-gray-900">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
