@@ -5,17 +5,17 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div className="py-16 bg-gradient-to-br from-green-400 to-blue-500">
+        <div className="py-16 ">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
                         <img
-                            src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+                            src="/src/images/About.jpg"
                             alt="image"
                         />
                     </div>
                     <div className="md:7/12 lg:w-6/12">
-                        <h3 className="text-2xl text-gray-900 font-bold md:text-4xl">
+                        <h3 className="text-blue-600 text-2xl font-bold md:text-4xl">
                             About Us
                         </h3>
                         <p className="mt-6 text-gray-600">
@@ -23,7 +23,7 @@ export default function About() {
                         </p>
                         <br />
 
-                        <h3 className="text-2xl text-gray-900 font-bold md:text-4xl">Our Expertise
+                        <h3 className="text-2xl text-blue-600 font-bold md:text-4xl">Our Expertise
                         </h3>
                         <p className="mt-4 text-gray-600">
                             <b className='text-md'>Psychology:</b> Our psychologists and career counselors are well-versed in the latest theories and research in career development, personality assessment, and vocational psychology. We use evidence-based tools and techniques to help individuals better understand their strengths, interests, and values.
@@ -37,7 +37,7 @@ export default function About() {
                             <b className='text-md'>Human Resources:</b> With our HR experts on board, we offer valuable perspectives on the practical realities of the workplace. We can help you navigate job search strategies, interview skills, and professional development to succeed in your chosen career.
                         </p>
                         <br />
-                        <h3 className="text-2xl text-gray-900 font-bold md:text-4xl">Our Passion
+                        <h3 className="text-2xl text-gray-900 hover:text-blue-600 font-bold md:text-4xl">Our Passion
                         </h3>
                         <p className="mt-4 text-gray-600">
                             <b className='text-md'>Psychology:</b> What drives us is our genuine passion for empowering individuals to make informed, fulfilling choices about their academic and professional journeys. We believe that the right guidance can open up transformative opportunities and positively impact lives.

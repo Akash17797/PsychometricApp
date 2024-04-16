@@ -19,7 +19,7 @@ function Header() {
     };
 
     return (
-        <header className="shadow sticky z-50 top-0">
+        <header className="shadow sticky z-50 top-0 ">
             <nav className="bg-gradient-to-br from-green-100 to-blue-200 border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
@@ -32,7 +32,7 @@ function Header() {
                     <div className="flex items-center lg:order-2">
                         <Link
                             to="#"
-                            className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none "
                         >
                             Log in
                         </Link>
@@ -68,8 +68,8 @@ function Header() {
                                     About Us
                                 </NavLink>
                                 {SubMenuOpen && (
-                                    <div className="absolute bg-transparent  border-2 border-transparent py-2 z-10">
-                                        <ul className="flex flex-col space-y-2">
+                                    <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
+                                        <ul className="flex flex-col p-2 space-y-2">
                                             <li className="bg-gray-200 rounded-lg">
                                                 <NavLink
                                                     to="./about/vision"
@@ -102,7 +102,7 @@ function Header() {
                                     Counselling
                                 </NavLink>
                                 {counsellingSubMenuOpen && (
-                                    <div className="absolute bg-transparent border-2 border-transparent py-2 z-10">
+                                    <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2 text-center ">
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
@@ -161,7 +161,7 @@ function Header() {
                                     Personality Development
                                 </NavLink>
                                 {devSubMenuOpen && (
-                                    <div className="absolute bg-transparent border-2 border-transparent py-2 z-10">
+                                    <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2">
                                             <li className="bg-gray-200 rounded-lg p-1">
                                                 <NavLink

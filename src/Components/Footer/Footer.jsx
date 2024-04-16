@@ -10,7 +10,7 @@ function Footer() {
                         <Link to="/" className="flex items-center">
                             <img
                                 src="\src\images\Icon.jpg"
-                                className="mr-3 h-16 w-16 sm:h-40 sm:w-40 rounded-full filter drop-shadow-2xl"
+                                className="mr-3 h-16 w-16 sm:h-32 sm:w-32 rounded-full filter drop-shadow-2xl"
                                 alt="Logo"
                             />
                         </Link>

@@ -11,7 +11,8 @@ function Home() {
                             Psychometric Testing
                             <span className="hidden sm:block text-2xl">by Ramvir Singh</span>
                         </h2>
-                        <div className='bg-gradient-to-br from-green-700 to-blue-700 p-4 rounded-full '>
+                        <div className='bg-gradient-to-br from-green-700 to-blue-700 p-4 rounded-full'>
+                            
                         <p className="text-2xl font-bold sm:text-center">
                             Did you know?
                         </p> <br />
@@ -24,10 +25,10 @@ function Home() {
                         </p>
                         </div>
                         <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-yellow-600 rounded-lg hover:opacity-75"
+                            className=" inline-flex text-white items-center px-6 py-3 font-medium bg-yellow-600 rounded-lg hover:opacity-75"
                             to="/"
                         >
-                            <svg
+                            <svg 
                                 fill="white"
                                 width="24"
                                 height="24"
