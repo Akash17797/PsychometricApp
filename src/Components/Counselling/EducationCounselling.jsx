@@ -2,8 +2,8 @@ import React from 'react'
 
 function EducationCounselling() {
     return (
-        <div className="flex justify-center items-center h-auto bg-gradient-to-br from-green-400 to-blue-500 ">
-      <div className="max-w-3xl p-6 bg-white rounded-lg shadow-lg">
+        <div className="flex justify-center items-center min-h-screen bg-blue-200 p-6">
+      <div className="max-w-3xl p-6 bg-sky-200 rounded-lg shadow-lg">
         <h1 className="text-3xl font-semibold text-center mb-6">Educational Counselling</h1>
         <p className="text-lg text-gray-800">
           Educational counselling mainly refers to providing assistance and guidance to students in making the right choices in their studies, including educational plans, career aspirations, choice of stream and specialization, as well as the selection of a college or university based on their interests and preferences.

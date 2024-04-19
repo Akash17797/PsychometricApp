@@ -2,8 +2,8 @@ import React from 'react'
 
 function Counselling() {
     return (
-        <div className=" bg-gradient-to-br from-green-400 to-blue-500 flex justify-center items-center h-screen">
-            <div className="max-w-3xl p-6 bg-white rounded-lg shadow-lg">
+        <div className=" bg-blue-200 flex justify-center items-center min-h-screen">
+            <div className="max-w-3xl bg-sky-200 p-6 rounded-lg shadow-lg">
                 <h1 className="text-3xl font-semibold text-center mb-6">Counselling</h1>
                 <p className="text-lg text-gray-800">
                     Counselling is a process. it is a continous course of action. Making adjustments in various important stages of life can be a tedious process and one may require professional help to overcome that stage. Therefore, it is an assistance given by a professionally trained person to the one who is asking for help.

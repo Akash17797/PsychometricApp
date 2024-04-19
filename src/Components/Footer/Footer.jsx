@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
-        <footer className="bg-gradient-to-br from-green-100 to-blue-900">
+        <footer className="bg-gradient-to-br from-green-700 to-blue-200">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -17,8 +17,8 @@ function Footer() {
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-                            <ul className="text-gray-900 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase"><b>Resources</b></h2>
+                            <ul className="text-gray-300 font-semibold">
                                 <li className="mb-4">
                                     <Link to="/" className="hover:underline">
                                         Home
@@ -32,8 +32,8 @@ function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-                            <ul className="text-gray-900 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase"><b>Follow us</b></h2>
+                            <ul className="text-gray-200 font-semibold">
                                 <li className="mb-4">
                                     <a
                                         href="https://www.facebook.com/ramvir.singh.39"
@@ -52,8 +52,8 @@ function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                            <ul className="text-gray-900 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase"><b>Legal</b></h2>
+                            <ul className="text-gray-200 font-semibold">
                                 <li className="mb-4">
                                     <Link to="#" className="hover:underline">
                                         Privacy Policy
@@ -70,7 +70,7 @@ function Footer() {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-900 sm:text-center">
+                    <span className="text-sm text-gray-200 sm:text-center">
                         © 2023
                         <a href="http://localhost:5173/" className="hover:underline">
                             Ramvir_Singh
