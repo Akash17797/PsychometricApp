@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mission = () => {
   return (
-    <div className="bg-gradient-to-br from-green-400 to-blue-500 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-br from-green-100 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
           To Create Meaningful Impact Through Career Guidance and Counseling

@@ -2,7 +2,7 @@ import React from 'react'
 
 function PersonalityDev() {
     return (
-        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-br from-green-100 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
             Personality Development and Its Benefits in the Modern World

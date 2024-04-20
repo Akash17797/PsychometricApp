@@ -2,7 +2,7 @@ import React from 'react'
 
 function Counselling() {
     return (
-        <div className=" bg-blue-200 flex justify-center items-center min-h-screen">
+        <div className=" bg-gradient-to-br from-green-100 to-blue-900 flex justify-center items-center min-h-screen">
             <div className="max-w-3xl bg-sky-200 p-6 rounded-lg shadow-lg">
                 <h1 className="text-3xl font-semibold text-center mb-6">Counselling</h1>
                 <p className="text-lg text-gray-800">

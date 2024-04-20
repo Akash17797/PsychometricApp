@@ -2,7 +2,7 @@ import React from 'react'
 
 function Psychometric() {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-100 to-blue-900">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-3xl w-full">
         <h1 className="text-3xl font-bold mb-6">Psychometric Testing: A Comprehensive Approach to Personal and Professional Development</h1>
         <div className="space-y-6">

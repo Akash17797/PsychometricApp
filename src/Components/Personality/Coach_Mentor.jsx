@@ -2,7 +2,7 @@ import React from 'react'
 
 function Coach_Mentor() {
     return (
-        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-br from-green-100 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">The Role of Coaching and Mentorship</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function MaritalCounselling() {
     return (
-        <div className="flex justify-center items-center h-screen bg-gradient-to-br from-green-400 to-blue-500">
+        <div className="flex justify-center items-center h-screen bg-gradient-to-br from-green-100 to-blue-900 ">
       <div className="max-w-3xl p-6 bg-white rounded-lg shadow-lg">
         <h1 className="text-3xl font-semibold text-center mb-6">Marital Counselling</h1>
         <p className="text-lg text-gray-800">
