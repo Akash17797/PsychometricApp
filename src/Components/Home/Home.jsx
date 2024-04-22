@@ -3,49 +3,81 @@ import { Link } from 'react-router-dom';
 
 function Home() {
     return (
-        <div className="bg-gradient-to-br from-green-100 to-blue-900 w-full">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-                <div className="relative z-10 max-w-screen-xl px-4 pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8 flex flex-col-reverse sm:flex-row">
-                    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl">
-                            Psychometric Testing
-                            <span className="hidden sm:block text-2xl">by Ramvir Singh</span>
-                        </h2>
-                        <div className='bg-gradient-to-br from-green-500 to-blue-700 p-4 rounded-full'>
-                            <p className=" animate-bounce text-green-950 text-2xl pt-2 font-bold sm:text-center">Did you know?</p> <br />
-                            <p className='sm:text-center text-balance p-2'>
-                                Did you know that having an empathetic, attuned counselor can actually increase the thickness of your Pre-frontal neo cortex (the Problem Solving, higher-level thinking of our brain). When trained caregivers join us on our journey of dreaming, healing, and transformation, it not only changes our lives but also our brain structure. Very Cool! Right?
-                            </p>
+        <div className='flex justify-center items-center min-h-screen bg-gradient-to-br from-green-100 to-blue-900 p-6'>
+            <div className="bg-gray-100 pl-5">
+
+
+                {/* Welcome Section */}
+                <section className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl font-bold mb-4">Welcome to Our Psychometric and Counseling Services</h2>
+                    <p className="text-gray-700 mb-6">
+                    The initiative to start this venture tok approx. 17 years of extensive research, observation and analysis. During those 17 years it was observed and need was felt that GenZ (Zoomers) are living under mote stress and anxiety then the earlier generations. To understand the basic and urgent requirement of staring this venture GenZ's Psychological Services. 
+                    </p>
+                </section>
+
+                <section className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl font-bold mb-4">Who are GenZ(Generation of Zoomers) ?</h2>
+                    <p className="text-gray-700 mb-6">
+                    Generation Z refers to the generation born roughly between 1997 - 2012, following millennials. They are the first generation to be completely raised with the Internet and Smartphones and have grown up with a very different experience of the world compared to previous generations.
+
+                    Specifically, they are interconnected globally with a diverse range of people and largely communicate through technology and Social media.
+                    </p>
+                </section>
+
+                <section className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl font-bold mb-4">GEN ZOOMERS IN INDIAN CONTEXT</h2>
+                    <p className="text-gray-700 mb-6">
+                    India a coutry with one of the world's youngest population is aware of the potential and influence of GenZ or "Zoomers". Considering one of the most evolved generations, it is the first cohort to grow up in the digital age - where the world witnessed rapid technological advancements.
+                    </p>
+
+                    <br />
+
+                    <h3 className="text-xl font-bold mb-4">'The Economic Times: News Headline'</h3>
+                    <p className="text-gray-700 mb-6">
+                    "Youth no longer Shy of seeking Psychological counselling/ Psychiatric help."
+                    <br />
+                    "GenZ demand for mental health drugs lifts sales 9% to Rs. 11,774 crore"
+                    <br />
+                    "India's youth is realising that you don't have to seek therapy support only for disorders but also to perform well in life's different aspects." said Konika Agarwal, Co-founder of MindPeers
+                    </p>
+                    <br />
+                    <p>
+                        The 18-35 age group reports disharmony between the measures of aspiration and leadership, showcasing a lack if direction among them.
+                        <br />
+                        GenZ is experiencing higher levels of Anxiety & Stress as assessed by Psychologists.
+                    </p>
+
+                </section>
+
+                {/* About the Counselor Section */}
+                <section className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl font-bold mb-4">About Mr. Ramvir Singh</h2>
+                    <div className="flex">
+                        <div className="w-72 h-72 rounded-full overflow-hidden mr-8">
+                            <img
+                                src="\src\images\ramvir.jpg"
+                                alt="Dr. John Doe"
+                                className="object-cover w-full h-full"
+                            />
                         </div>
-                        <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-yellow-600 rounded-lg hover:opacity-75 mt-4 sm:mt-0"
-                            to="/"
-                        >
-                            <svg
-                                fill="white"
-                                width="24"
-                                height="24"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                            >
-                                <path d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z" />
-                            </svg>
-                            &nbsp; Click for Guidance
-                        </Link>
+                        <div>
+                            <p className="text-gray-700 mb-4">
+                                Dr. John Doe is a highly respected psychologist and counselor with over 15 years of experience in the field. He holds a Ph.D. in Clinical Psychology from a renowned university and is a certified psychometric assessor.
+                            </p>
+                            <p className="text-gray-700 mb-4">
+                                Dr. Doe's expertise lies in helping individuals overcome various emotional and behavioral challenges, such as anxiety, depression, relationship issues, and personal growth. He utilizes evidence-based therapies, including cognitive-behavioral therapy (CBT), to provide tailored treatment plans for each client.
+                            </p>
+                            <h3 className="text-2xl font-bold mb-2">Achievements and Recognitions</h3>
+                            <ul className="list-disc list-inside text-gray-700">
+                                <li>Awarded the "Outstanding Counselor of the Year" by the National Counseling Association in 2020</li>
+                                <li>Published numerous research papers in prestigious psychology journals</li>
+                                <li>Served as a keynote speaker at various mental health conferences</li>
+                                <li>Recognized for his contributions to the field of psychometric assessments</li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                </div>
-                <div className="absolute inset-0 w-full lg:my-20 sm:pt-1 pt-12 h-full flex items-center">
-                        <img className="w-52 sm:w-96 rounded-full" src="src\images\HomeUp.jpg" alt="image1" />
-                    </div>
-            </aside>
-
-            <div className="grid place-items-center sm:mt-20">
-                <img className="max-w-78 rounded-full" src="src\images\homedown.jpg" alt="image2" />
+                </section>
             </div>
-
-            <h1 className=" text-center text-3xl sm:text-5xl py-10 font-medium">Build your dreams Now</h1>
         </div>
     );
 }

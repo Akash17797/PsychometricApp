@@ -4,7 +4,7 @@ function Counselling() {
     return (
         <div className=" bg-gradient-to-br from-green-100 to-blue-900 flex justify-center items-center min-h-screen">
             <div className="max-w-3xl bg-sky-200 p-6 rounded-lg shadow-lg">
-                <h1 className="text-3xl font-semibold text-center mb-6">Counselling</h1>
+                <h1 className="text-3xl font-semibold text-center mb-6">Guidance & Counselling: An Overview</h1>
                 <p className="text-lg text-gray-800">
                     Counselling is a process. it is a continous course of action. Making adjustments in various important stages of life can be a tedious process and one may require professional help to overcome that stage. Therefore, it is an assistance given by a professionally trained person to the one who is asking for help.
 

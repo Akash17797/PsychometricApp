@@ -5,7 +5,7 @@ function PersonalityDev() {
         <div className="bg-gradient-to-br from-green-100 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            Personality Development and Its Benefits in the Modern World
+            Personality Development
           </h1>
           <p className="text-lg text-gray-700 mb-8">
             In the ever-evolving landscape of the modern world, the importance of personal growth and development has become increasingly vital. Personality development, a multifaceted process of enhancing one's unique traits, attitudes, and behaviors, has emerged as a crucial tool for navigating the complexities of contemporary life.

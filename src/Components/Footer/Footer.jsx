@@ -130,7 +130,7 @@ function Footer() {
                             </svg>
                             <span className="sr-only">Instagram page</span>
                         </Link>
-                        <Link to="#" className="text-gray-900">
+                        <Link to="/" className="text-gray-900">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
