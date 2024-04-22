@@ -87,7 +87,7 @@ function Header() {
                                     to="./counselling"
                                     className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                                 >
-                                    G & C
+                                    G&C
                                 </NavLink>
                                 {counsellingSubMenuOpen && (
                                     <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">

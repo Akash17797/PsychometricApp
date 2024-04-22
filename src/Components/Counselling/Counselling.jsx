@@ -1,30 +1,45 @@
-import React from 'react'
+import React from 'react';
 
 function Counselling() {
     return (
-        <div className=" bg-gradient-to-br from-green-100 to-blue-900 flex justify-center items-center min-h-screen">
-            <div className="max-w-3xl bg-sky-200 p-6 rounded-lg shadow-lg">
-                <h1 className="text-3xl font-semibold text-center mb-6">Guidance & Counselling: An Overview</h1>
-                <p className="text-lg text-gray-800">
-                    Counselling is a process. it is a continous course of action. Making adjustments in various important stages of life can be a tedious process and one may require professional help to overcome that stage. Therefore, it is an assistance given by a professionally trained person to the one who is asking for help.
+        <div className="bg-gradient-to-br from-indigo-500 to-purple-700 min-h-screen flex items-center justify-center">
+            <div className="max-w-4xl bg-purple-200 p-8 rounded-lg shadow-2xl">
+                <h1 className="text-4xl font-bold text-center mb-8 underline text-indigo-900">Guidance & Counselling: An Overview</h1>
 
-                </p>
-                <p className="text-lg text-gray-800 mt-4">
-                    It is an assistance and hence not "Advice giving" given to persons who are basically psychologically healthy. Counselling is not carrying another person's burden, but assisting him/her to carry and face their own problem.
-                    <br /><br />
-                    <li>Purpose of counselling is not to make decision for others. It is helping them to arrive at their own decisions.</li>
-                    <li> it is not solving another's problem but helping him/her to solve their own problems. Making him/her understand his/her assets and liabilities can do this.
-                    </li>
-                    <br />
+                {/* Guidance Section */}
+                <div className="mb-12">
+                    <h2 className="text-3xl font-semibold mb-4 text-indigo-900 underline">Guidance</h2>
+                    <p className="text-lg text-gray-700 mb-4">
+                        Guidance is more than giving information. It is a blend of self development and of the learning and assimilation of career, providing educational and labour market information. The development of self-confidence is often pre-requisite for taking action for one's career. The goal of guidance maybe achieved via individual counselling, self-preparation, career development courses computer-assisted guidance and Internet-based guidance systems.
+                    </p>
+                    <p className="text-lg text-gray-700">
+                        Guidance helps people to accomplish their goals. It helps people to identify own talents, strength and weaknesses, family expectations and national requirement to sort out the personal relevance of the educational and vocational options available to them.
+                    </p>
+                </div>
 
-                </p>
-                <p>
-                    However, it is systematic and scientific process with well specified goals. The term "counseling" is lossely used and all types of people who have no idea of counselling, procalim themselves to be counsellors. It is a profession and a profession is a disciplined group of individuals who adhere to ethical standards.
-                </p>
-                {/* Include more paragraphs as needed */}
+                {/* Counselling Section */}
+                <div>
+                    <h2 className="text-3xl font-semibold mb-4 text-indigo-900 underline">Counselling</h2>
+                    <p className="text-lg text-gray-700 mb-4">
+                        Counselling is a process. It is a continuous course of action. Making adjustments in various important stages of life can be a tedious process and one may require professional help to overcome that stage. Therefore, it is an assistance given by a professionally trained person to the one who is asking for help.
+                    </p>
+                    <p className="text-lg text-gray-700 mb-4">
+                        Counselling is defined as a collaborative process in which the counsellor or psychologist facilitates the expansion of the pupil's (individual's) view of life, enlarges his repertoire of coping resources and enables him to make choices for change in himself, the situation, and the environment, without destructive consequences to self or others. The process is directed by the application of specialized skills and strategies in a therapeutic relationship. The goal of intervention is to help pupils manage these problems effectively so that their total development would not be impeded.
+                    </p>
+                    <p className="text-lg text-gray-700 mb-4">
+                        It is an assistance and hence not "Advice giving" given to persons who are basically psychologically healthy. Counselling is not carrying another person's burden, but assisting him/her to carry and face their own problem.
+                    </p>
+                    <ul className="list-disc list-inside text-lg text-gray-700 mb-4">
+                        <li>Purpose of counselling is not to make decisions for others. It is helping them to arrive at their own decisions.</li>
+                        <li>It is not solving another's problem but helping him/her to solve their own problems. Making him/her understand his/her assets and liabilities can do this.</li>
+                    </ul>
+                    <p className="text-lg text-gray-700">
+                        However, it is a systematic and scientific process with well-specified goals. The term "counseling" is loosely used and all types of people who have no idea of counseling, proclaim themselves to be counselors. It is a profession and a profession is a disciplined group of individuals who adhere to ethical standards.
+                    </p>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Counselling
+export default Counselling;
