@@ -18,6 +18,8 @@ import MaritalCounselling from './Components/Counselling/MaritalCounselling.jsx'
 import PersonalityDev from './Components/Personality/PersonalityDev.jsx'
 import Coach_Mentor from './Components/Personality/Coach_Mentor.jsx'
 import Psychometric from './Components/Psychometric/Psychometric.jsx'
+import SignUp from './Components/Login/SignUp.jsx'
+import LogIn from './Components/Login/LogIn.jsx'
 
 
 // const router = createBrowserRouter([           
@@ -76,6 +78,9 @@ const router = createBrowserRouter(
 
       <Route path='/drug_abuse' element={<Drug/>}/>
       <Route path='/contact' element={<Contact/>}/>
+
+      <Route path='/signup' element={<SignUp/>} />
+      <Route path='/login' element={<LogIn/>} />
                
     </Route>
   )
