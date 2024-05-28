@@ -3,18 +3,18 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     const [SubMenuOpen, setSubMenuOpen] = useState(false);
-    const [counsellingSubMenuOpen, setCounsellingSubMenuOpen] = useState(false)
-    const [devSubMenuOpen, setDevSubMenuOpen] = useState(false)
+    const [counsellingSubMenuOpen, setCounsellingSubMenuOpen] = useState(false);
+    const [devSubMenuOpen, setDevSubMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
 
     const handleSubMenuToggle = () => {
         setSubMenuOpen(!SubMenuOpen);
-    }
+    };
 
     const handleCounsellingSubMenuToggle = () => {
         setCounsellingSubMenuOpen(!counsellingSubMenuOpen);
-    }
-    
+    };
+
     const handleDevSubMenuToggle = () => {
         setDevSubMenuOpen(!devSubMenuOpen);
     };
@@ -29,13 +29,13 @@ function Header() {
                 <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
-                            src="\src\images\Icon.jpg"
+                            src="/src/images/Icon.jpg"
                             className="h-20 object-cover rounded-full w-20 mr-2 filter drop-shadow-lg"
                             alt="Logo"
                         />
                     </Link>
                     <div className="pl-28 hidden lg:flex">
-                    <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink
                                     to="./"
@@ -136,7 +136,6 @@ function Header() {
                                     </div>
                                 )}
                             </li>
-
                             <li
                                 className="relative"
                                 onMouseEnter={handleDevSubMenuToggle}
@@ -179,7 +178,6 @@ function Header() {
                                     Drug Abuse
                                 </NavLink>
                             </li>
-
                             <li>
                                 <NavLink
                                     to="./contact"
@@ -206,36 +204,31 @@ function Header() {
                             Sign Up
                         </Link>
                     </div>
-                    <div className="flex lg:hidden">
-                        <button
-                            type="button"
-                            className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                            aria-controls="mobile-menu"
-                            aria-expanded={isOpen}
-                            onClick={toggleMenu}
-                        >
-                            <span className="sr-only">Open main menu</span>
-                            <svg
-                                className="block h-6 w-6"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                {isOpen ? (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                ) : (
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                                )}
-                            </svg>
-                        </button>
                     </div>
-                </div>
-                {/* Mobile menu */}
-                {isOpen && (
+
+                <button
+                    onClick={toggleMenu}
+                    className="lg:hidden text-gray-500 focus:outline-none focus:text-gray-700 duration-200 p-2 rounded-md border-2 border-transparent focus:ring-2 focus:ring-orange-700"
+                >
+                    <svg
+                        className={`h-8 w-8 transition-transform ${isOpen ? 'transform rotate-90' : ''}`}
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                        />
+                    </svg>
+                </button>
+            </nav>
+            {isOpen && (
                     <div className="lg:hidden">
-                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <ul className=" bg-blue-400 flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink
                                     to="./"
@@ -391,7 +384,6 @@ function Header() {
                         </ul>
                     </div>
                 )}
-            </nav>
         </header>
     );
 }

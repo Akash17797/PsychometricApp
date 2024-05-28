@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function Home() {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 to-blue-900 p-6">
-            <div className="bg-blue-300 max-w-5xl rounded-lg shadow-xl p-6">
+        <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 to-blue-900 p-6  ">
+            <div className="bg-blue-300 max-w-5xl rounded-lg shadow-xl p-6 ">
                 {/* Welcome Section */}
                 <section className="mb-8">
-                    <h2 className="text-3xl font-bold mb-4 text-center text-blue-900">Welcome to Our Psychometric and Counseling Services</h2>
-                    <p className="text-gray-900 mb-6">
+                    <h2 className="text-3xl hover:shadow-2xl font-bold mb-4 text-blue-900">Welcome to Our Psychometric and Counseling Services</h2>
+                    <p className="text-gray-900 mb-6 rounded-xl hover:shadow-2xl bg-blue-200 p-2">
                         The initiative to start this venture took approximately 17 years of extensive research, observation, and analysis. During those 17 years, it was observed and the need was felt that GenZ (Zoomers) are living under more stress and anxiety than earlier generations. To understand the basic and urgent requirement of starting this venture GenZ's Psychological Services.
                     </p>
                 </section>
@@ -45,7 +45,7 @@ function Home() {
                 <section>
                     <h2 className="text-3xl font-bold mb-4 text-center text-blue-900">About Mr. Ramvir Singh</h2>
                     <div className="flex flex-col md:flex-row items-center justify-center mb-6">
-                        <img 
+                        <img
                             src="\src\images\ramvir.jpg"
                             alt="Mr. Ramvir Singh"
                             className="object-cover w-full md:w-1/3 h-80 rounded-full mx-auto md:mx-4 mb-4 md:mb-0 shadow-2xl transition-shadow hover:scale-105"
