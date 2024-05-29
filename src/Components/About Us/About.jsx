@@ -1,14 +1,15 @@
 import React from 'react';
 
+
 const About = () => {
   return (
     <div className="bg-yellow-100 py-16 animate-fadeIn">
       <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6 ">
         <div className="flex flex-col md:flex-row md:gap-6 lg:gap-12">
-          <div className="flex justify-center md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
+          <div className="flex justify-center h-2/6 xl:mt-20 md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
             <img
-              className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-slideInLeft"
-              src="/src/images/About.jpg"
+              className="rounded-full shadow-lg shadow-black transform hover:scale-105 transition-transform duration-300 animate-slideInLeft"
+              src="src\Components\images\About.jpg"
               alt="Ramvir Singh"
             />
           </div>

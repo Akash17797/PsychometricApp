@@ -1,20 +1,28 @@
 import React from 'react'
+import backgroundImage from '../images/contactUs.avif'
 
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-gradient-to-br from-green-100 to-blue-900 sm:items-center sm:pt-0">
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
-                        <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
+        <div className="relative flex items-top justify-center min-h-[700px] sm:items-center sm:pt-0 "
+            style={{
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center'
+            }}
+        >
+            <div className="max-w-6xl mb-28 mx-auto sm:px-6 lg:px-8 ">
+                <div className="mt-8 overflow-hidden" >
+                    <div className="grid grid-cols-1 md:grid-cols-2" >
+                        <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg" >
                             <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
-                                Get in touch: 
+                                Get in touch:
                             </h1>
                             <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
                                 Fill in the form to start a conversation
                             </p>
 
-                            <div className="flex items-center mt-8 text-gray-600">
+                            <div className="flex items-center mt-8 text-gray-600 ">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -37,12 +45,12 @@ export default function Contact() {
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                     />
                                 </svg>
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                                <div className="ml-4 text-md tracking-wide font-semibold w-48">
                                     #215, <br />Baba Peer Colony, Humayunpur, 140406
                                 </div>
                             </div>
 
-                            <div className="flex items-center mt-4 text-gray-600">
+                            <div className="flex items-center text-gray-600 mt-6">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -66,7 +74,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center mt-2 text-gray-600">
+                            <div className="flex items-center mt-6 text-gray-600">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -91,7 +99,7 @@ export default function Contact() {
 
                         <form className="p-6 flex flex-col justify-center">
                             <div className="flex flex-col">
-                                <label for="name" className="hidden">
+                                <label htmlFor="name" className="hidden">
                                     Full Name
                                 </label>
                                 <input
@@ -104,7 +112,7 @@ export default function Contact() {
                             </div>
 
                             <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
+                                <label htmlFor="email" className="hidden">
                                     Email
                                 </label>
                                 <input
@@ -117,7 +125,7 @@ export default function Contact() {
                             </div>
 
                             <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
+                                <label htmlFor="tel" className="hidden">
                                     Number
                                 </label>
                                 <input
@@ -127,6 +135,17 @@ export default function Contact() {
                                     placeholder="Telephone Number"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
+                            </div>
+                            <div className="flex flex-col mt-2">
+                                <label htmlFor="textInput" className="hidden">
+                                    Write your message/question:
+                                </label>
+                                <textarea
+                                    id="textInput"
+                                    placeholder='Write your message/question:'
+                                    rows="5"
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                ></textarea>
                             </div>
 
                             <button

@@ -29,13 +29,13 @@ function Header() {
                 <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
-                            src="/src/images/Icon.jpg"
+                            src="src\Components\images\Icon.jpg"
                             className="h-20 object-cover rounded-full w-20 mr-2 filter drop-shadow-lg"
                             alt="Logo"
                         />
                     </Link>
                     <div className="pl-28 hidden lg:flex">
-                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <ul className="flex flex-col mt-4 font-bold text-md lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink
                                     to="./"
@@ -189,17 +189,17 @@ function Header() {
                         </ul>
                     </div>
                 </div>
-                <div className="flex items-center">
-                    <div className="hidden lg:flex">
+                <div className="flex items-center ">
+                    <div className="hidden lg:flex ">
                         <Link
                             to="./login"
-                            className="text-gray-200 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-gray-200 hover:bg-red-600 font-bold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Log in
                         </Link>
                         <Link
                             to="./signup"
-                            className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-white hover:bg-red-600 focus:ring-4 focus:ring-orange-300 font-bold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Sign Up
                         </Link>
@@ -228,7 +228,7 @@ function Header() {
             </nav>
             {isOpen && (
                     <div className="lg:hidden">
-                        <ul className=" bg-blue-400 flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <ul className=" bg-blue-400 flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink
                                     to="./"
@@ -381,6 +381,19 @@ function Header() {
                                     Contact
                                 </NavLink>
                             </li>
+                            <Link
+                            to="./login"
+                            className="text-gray-200 hover:bg-red-600 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b"
+                        >
+                            Log in
+                        </Link>
+                        <Link
+                            to="./signup"
+                            className="text-white hover:bg-red-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b"
+                        >
+                            Sign Up
+                        </Link>
+
                         </ul>
                     </div>
                 )}

@@ -27,12 +27,13 @@
 
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import backgroundImage from '../images/backgroundImage.jpg'
 
 function Home() {
     return (
         <div className="bg-gray-100 text-gray-800">
             {/* Hero Section */}
-            <section className="bg-cover bg-center h-screen" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1716635312355-e727dfde0705?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")' }}>
+            <section className="bg-cover bg-center h-screen" style={{ backgroundImage : `url(${backgroundImage})`}}>
                 <div className="flex items-center justify-center h-full bg-black bg-opacity-50 animate-fadeIn">
                     <div className="text-center text-white">
                         <h1 className="text-5xl font-bold mb-4 animate-slideInDown">Ramvir Singh</h1>
@@ -52,7 +53,7 @@ function Home() {
                     <h2 className="text-4xl font-bold mb-4">About Ramvir Singh</h2>
                     <p className="text-xl mb-8">Ramvir Singh is a renowned personal mentor and counsellor with over 17 years of experience in guiding individuals towards personal and professional growth. <br />M.A. (English & Psychology (Pursuing)) M.Ed (Guidance & Counselling) </p>
                     <div className="flex justify-center">
-                        <img src=".\src\images\ramvir.jpg" alt="Ramvir Singh" className="rounded-full w-80 h-80 object-cover shadow-lg transform hover:scale-110 transition-transform" />
+                        <img src="src\Components\images\ramvir.jpg" alt="Ramvir Singh" className="rounded-full w-80 h-80 object-cover shadow-lg transform hover:scale-110 transition-transform" />
                     </div>
                 </div>
             </section>
@@ -63,19 +64,23 @@ function Home() {
                     <h2 className="text-4xl font-bold mb-12 text-center">Services Offered</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src="https://via.placeholder.com/200x200" alt="Service 1" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src="src\Components\images\life.jpg" alt="Service 1" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Life Coaching</h3>
                             <p className="text-gray-600">Personalized guidance to help you achieve your life goals and overcome obstacles.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src="https://via.placeholder.com/200x200" alt="Service 2" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src="src\Components\images\personality.webp" alt="Service 2" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Personality Development</h3>
                             <p className="text-gray-600">Empowering you to improve your skills, confidence, and personal growth for a better future.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src="https://via.placeholder.com/200x200" alt="Service 3" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <NavLink 
+                            to="./counselling/Career_Counselling">
+                            
+                            <img src="src\Components\images\Career.jpg" alt="Service 3" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Career Counseling</h3>
                             <p className="text-gray-600">Professional advice to help you navigate and advance in your career.</p>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

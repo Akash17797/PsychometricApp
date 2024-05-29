@@ -1,16 +1,27 @@
 import React from 'react';
+import backgroundImage from '../vision.jpg'
 
 const Vision = () => {
   return (
-    <div className="bg-gradient-to-br from-green-300 to-blue-700 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-8">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 flex"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center'
+  }}
+    >
+      <div className='mx-2'>
+        <img src="\src\Components\images\career counselling.jpg" alt="vison" className='rounded-2xl'/>
+      </div>
+      <div className="max-w-5xl mx-auto bg-opacity-40 p-5 rounded-2xl bg-white">
+        <h1 className="text-4xl font-bold text-black mb-8">
           To Create Meaningful Impact Through Career Guidance and Counseling
         </h1>
 
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Vision</h2>
-          <p className="text-lg text-gray-700 mb-4">
+        <div className=" rounded-lg shadow-lg p-8 mb-8">
+          <h2 className="text-3xl font-bold text-black mb-6">Vision</h2>
+          <p className="text-lg text-black font-bold mb-4">
             Our vision is to empower every student and working professional to make informed, fulfilling choices about their educational and career paths. We aim to achieve this through a scientifically-driven yet empathetic methodology that prioritizes long-term success and happiness.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
