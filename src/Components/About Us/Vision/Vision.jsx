@@ -37,9 +37,9 @@ const Vision = () => {
 
 const VisionItem = ({ title, description }) => {
   return (
-    <div className="bg-gradient-to-b from-green-200 to-blue-200 p-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+    <div className="bg-yellow-200 bg-opacity-60 p-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
       <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-700">{description}</p>
+      <p className="text-gray-900 ">{description}</p>
     </div>
   );
 };

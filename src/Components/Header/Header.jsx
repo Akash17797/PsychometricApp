@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+
+
 function Header() {
     const [SubMenuOpen, setSubMenuOpen] = useState(false);
     const [counsellingSubMenuOpen, setCounsellingSubMenuOpen] = useState(false);
@@ -25,7 +27,7 @@ function Header() {
 
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="flex items-center justify-between bg-gradient-to-br from-green-700 to-blue-400 border-gray-200 px-4 sm:px-6 lg:px-8 py-2.5">
+            <nav className="flex items-center justify-between bg-gradient-to-r from-green-400 to-blue-300 px-4 sm:px-6 lg:px-8 py-2.5">
                 <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
@@ -39,7 +41,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 px-4 duration-500 hover:text-red-500"
                                 >
                                     Home
                                 </NavLink>
@@ -51,25 +53,25 @@ function Header() {
                             >
                                 <NavLink
                                     to="./about"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 lg:border-0 lg:p-0 hover:text-red-500"
                                 >
                                     About Us
                                 </NavLink>
                                 {SubMenuOpen && (
                                     <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2">
-                                            <li className="bg-gray-200 rounded-lg">
+                                            <li className="hover:bg-gray-200 rounded-lg duration-500">
                                                 <NavLink
                                                     to="./about/vision"
-                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700"
+                                                    className="block px-4 py-2 text-white hover:text-red-600 duration-500"
                                                 >
                                                     Vision
                                                 </NavLink>
                                             </li>
-                                            <li className="bg-gray-200 rounded-lg">
+                                            <li className="hover:bg-gray-200 rounded-lg duration-500">
                                                 <NavLink
                                                     to="./about/mission"
-                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700"
+                                                    className="block px-4 py-2 text-white hover:text-red-600 duration-500"
                                                 >
                                                     Mission
                                                 </NavLink>
@@ -85,7 +87,7 @@ function Header() {
                             >
                                 <NavLink
                                     to="./counselling"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:shadow-2xl hover:shadow-white hover:text-red-600 lg:border-0 lg:p-0"
                                 >
                                     G&C
                                 </NavLink>
@@ -95,7 +97,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/educational_counselling"
-                                                    className=" block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className=" block py-2 pr-4 pl-3 duration-500 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                                                 >
                                                     Educational Counselling
                                                 </NavLink>
@@ -103,7 +105,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Career_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className="block py-2 pr-4 pl-3 duration-500 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                                                 >
                                                     Career Counselling
                                                 </NavLink>
@@ -111,7 +113,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Psychological_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className="block py-2 pr-4 pl-3 duration-500 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                                                 >
                                                     Psychological Counselling
                                                 </NavLink>
@@ -119,7 +121,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Behavioral_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className="block py-2 pr-4 pl-3 duration-500 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                                                 >
                                                     Behavioral Counselling
                                                 </NavLink>
@@ -127,7 +129,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Marital_Counselling"
-                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0  "
+                                                    className="w-52 block py-2 pr-4 pl-3 duration-500 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0  "
                                                 >
                                                     Marital Counselling
                                                 </NavLink>
@@ -143,7 +145,7 @@ function Header() {
                             >
                                 <NavLink
                                     to="./Personality_Development"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
                                 >
                                     Personality Development
                                 </NavLink>
@@ -165,7 +167,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./psychometric_testing"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
                                 >
                                     Psychometric Testing
                                 </NavLink>
@@ -173,7 +175,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./drug_abuse"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
                                 >
                                     Drug Abuse
                                 </NavLink>
@@ -181,7 +183,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./contact"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
                                 >
                                     Contact
                                 </NavLink>
@@ -193,13 +195,13 @@ function Header() {
                     <div className="hidden lg:flex ">
                         <Link
                             to="./login"
-                            className="text-gray-200 hover:bg-red-600 font-bold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="bg-red-600 duration-500 hover:bg-green-500 text-white focus:ring-4 focus:ring-orange-300 font-bold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Log in
                         </Link>
                         <Link
                             to="./signup"
-                            className="text-white hover:bg-red-600 focus:ring-4 focus:ring-orange-300 font-bold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="bg-red-600 duration-500 hover:bg-green-500 text-white focus:ring-4 focus:ring-orange-300 font-bold rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Sign Up
                         </Link>
@@ -232,7 +234,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                 >
                                     Home
                                 </NavLink>
@@ -244,7 +246,7 @@ function Header() {
                             >
                                 <NavLink
                                     to="./about"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                 >
                                     About Us
                                 </NavLink>
@@ -254,7 +256,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg">
                                                 <NavLink
                                                     to="./about/vision"
-                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700"
+                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700 hover:font-bold"
                                                 >
                                                     Vision
                                                 </NavLink>
@@ -262,7 +264,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg">
                                                 <NavLink
                                                     to="./about/mission"
-                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700"
+                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700 hover:font-bold"
                                                 >
                                                     Mission
                                                 </NavLink>
@@ -278,7 +280,7 @@ function Header() {
                             >
                                 <NavLink
                                     to="./counselling"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                 >
                                     Counselling
                                 </NavLink>
@@ -288,7 +290,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/educational_counselling"
-                                                    className=" block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className=" block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                                 >
                                                     Educational Counselling
                                                 </NavLink>
@@ -296,7 +298,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Career_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                                 >
                                                     Career Counselling
                                                 </NavLink>
@@ -304,7 +306,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Psychological_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                                 >
                                                     Psychological Counselling
                                                 </NavLink>
@@ -312,7 +314,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Behavioral_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                                 >
                                                     Behavioral Counselling
                                                 </NavLink>
@@ -320,7 +322,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg px-4 py-2">
                                                 <NavLink
                                                     to="./counselling/Marital_Counselling"
-                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0  "
+                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0  hover:font-bold "
                                                 >
                                                     Marital Counselling
                                                 </NavLink>
@@ -337,7 +339,7 @@ function Header() {
                             >
                                 <NavLink
                                     to="./Personality_Development"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                 >
                                     Personality Development
                                 </NavLink>
@@ -347,7 +349,7 @@ function Header() {
                                             <li className="bg-gray-200 rounded-lg p-1">
                                                 <NavLink
                                                     to="./Personality_Development/Coaching_&_Mentoring"
-                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 text-center"
+                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 text-center hover:font-bold"
                                                 >
                                                     Coaching & Mentoring
                                                 </NavLink>
@@ -359,7 +361,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./psychometric_testing"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                 >
                                     Psychometric Testing
                                 </NavLink>
@@ -367,7 +369,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./drug_abuse"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
                                 >
                                     Drug Abuse
                                 </NavLink>
@@ -376,20 +378,20 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./contact"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 hover:font-bold lg:p-0"
                                 >
                                     Contact
                                 </NavLink>
                             </li>
                             <Link
                             to="./login"
-                            className="text-gray-200 hover:bg-red-600 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b"
+                            className="text-gray-900 hover:bg-red-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b hover:font-bold"
                         >
                             Log in
                         </Link>
                         <Link
                             to="./signup"
-                            className="text-white hover:bg-red-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b"
+                            className="text-gray-900 hover:bg-red-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b hover:font-bold"
                         >
                             Sign Up
                         </Link>
