@@ -3,7 +3,7 @@ import backgroundImage from '../images/counselling.jpg';
 import { Link, NavLink } from 'react-router-dom';
 
 const BenefitItem = ({ title, description }) => (
-  <li className="hover:bg-green-100 transition duration-300 ease-in-out hover:rounded-xl hover:p-2 transform hover:-translate-y-1 hover:scale-105">
+  <li className="hover:bg-green-100 transition bg-opacity-60 duration-300 ease-in-out hover:rounded-xl hover:p-2 transform hover:-translate-y-1 hover:scale-105">
     <span className="text-green-900 font-bold">{title}</span>
     <p>{description}</p>
   </li>
@@ -43,7 +43,7 @@ function PersonalityDev() {
         backgroundPosition: 'center'
       }}
     >
-      <div className="bg-opacity-75 p-8 rounded-2xl bg-white shadow-lg max-w-5xl w-full">
+      <div className="bg-opacity-60 p-8 rounded-2xl bg-white shadow-lg max-w-5xl w-full">
         <h1 className="text-4xl font-bold text-center mb-8 text-green-900">
           Personality Development
         </h1>

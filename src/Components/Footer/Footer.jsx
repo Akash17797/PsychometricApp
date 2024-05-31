@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
-        <footer className="bg-gradient-to-r from-blue-700 to-red-300">
+        <footer className="bg-gradient-to-r from-teal-800 to-yellow-600">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">

@@ -1,10 +1,17 @@
 import React from 'react';
-
+import backgroundImage from '../About Us/vision.jpg'
 
 const About = () => {
   return (
-    <div className="bg-yellow-100 py-16 animate-fadeIn">
-      <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6 ">
+    <div className="bg-yellow-100 py-16 animate-fadeIn"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center'
+    }}
+    >
+      <div className=" container mx-auto px-6 text-gray-600 md:px-12 xl:px-6 ">
         <div className="flex flex-col md:flex-row md:gap-6 lg:gap-12">
           <div className="flex justify-center h-2/6 xl:mt-20 md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
             <img
@@ -13,7 +20,7 @@ const About = () => {
               alt="Ramvir Singh"
             />
           </div>
-          <div className="flex flex-col justify-center md:w-1/2 lg:w-2/3 text-justify animate-slideInDown">
+          <div className="bg-white bg-opacity-70 p-4 rounded-2xl flex flex-col justify-center md:w-1/2 lg:w-2/3 text-justify animate-slideInDown">
             <div>
               <h3 className="text-blue-700 text-2xl font-bold md:text-4xl mb-6 underline">About Us</h3>
               <p className="text-gray-800">
