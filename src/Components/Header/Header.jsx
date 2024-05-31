@@ -27,7 +27,7 @@ function Header() {
 
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="flex items-center justify-between bg-gradient-to-r from-green-400 to-blue-300 px-4 sm:px-6 lg:px-8 py-2.5">
+            <nav className="flex items-center justify-between bg-gradient-to-r from-blue-500 to-black px-4 sm:px-6 lg:px-8 py-2.5">
                 <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
