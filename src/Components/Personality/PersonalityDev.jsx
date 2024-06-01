@@ -42,7 +42,11 @@ function PersonalityDev() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
       }}
-    >
+    > 
+    <div className='flex bg-blue-200 bg-opacity-55'>
+    <div className="flex-none w-2/6 m-2">
+          <img src="\src\Components\images\career counselling.jpg" alt="vision" className="rounded-l-2xl h-full object-cover" />
+        </div>
       <div className="bg-opacity-60 p-8 rounded-2xl bg-white shadow-lg max-w-5xl w-full">
         <h1 className="text-4xl font-bold text-center mb-8 text-green-900">
           Personality Development
@@ -73,6 +77,7 @@ function PersonalityDev() {
           Start Your Journey
           </NavLink>
         </button>
+      </div>
       </div>
     </div>
   );

@@ -47,6 +47,10 @@ function Coach_Mentor() {
         backgroundPosition: 'center'
       }}
     >
+      <div className='flex bg-blue-200 bg-opacity-55'>
+    <div className="flex-none w-2/6 m-2">
+          <img src="\src\Components\images\career counselling.jpg" alt="vision" className="rounded-l-2xl h-full object-cover" />
+        </div>
       <div className="bg-opacity-40 p-8 rounded-2xl bg-white shadow-lg max-w-5xl w-full space-y-8">
         <h1 className="text-4xl font-bold text-center mb-8 text-green-900 animate__animated animate__fadeIn">
           The Role of Coaching and Mentorship
@@ -81,6 +85,7 @@ function Coach_Mentor() {
             Start Your Journey
           </NavLink>
         </button>
+      </div>
       </div>
     </div>
   );

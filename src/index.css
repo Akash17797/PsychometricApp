@@ -40,3 +40,18 @@
 .animate-slideInUp {
     animation: slideInUp 1s ease-in-out forwards;
 }
+
+.fade-in {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    opacity: 100;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

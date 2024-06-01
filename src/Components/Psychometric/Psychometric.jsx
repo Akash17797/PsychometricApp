@@ -2,7 +2,7 @@ import React from 'react';
 import backgroundImage from '../images/psychometric.jpg'; 
 
 const ListItem = ({ title, description }) => (
-  <li className="hover:bg-green-100 transition duration-300 ease-in-out hover:rounded-xl hover:p-2 transform hover:-translate-y-1 hover:scale-105">
+  <li className="hover:bg-green-100 transition duration-700 ease-in-out hover:rounded-xl hover:p-2 transform hover:-translate-y-1 hover:scale-105">
     <span className="text-green-900 font-bold">{title}</span>
     <p>{description}</p>
   </li>
@@ -42,6 +42,10 @@ function Psychometric() {
         backgroundPosition: 'center'
       }}
     >
+      <div className='flex bg-blue-200 bg-opacity-55'>
+      <div className="flex-none w-2/6 m-2">
+          <img src="\src\Components\images\career counselling.jpg" alt="vision" className="rounded-l-2xl h-full object-cover" />
+        </div>
       <div className="bg-opacity-75 p-8 rounded-2xl bg-white shadow-lg max-w-5xl w-full">
         <h1 className="text-4xl font-bold text-center mb-8 text-green-900">
           Psychometric Testing: A Comprehensive Approach to Personal and Professional Development
@@ -74,6 +78,7 @@ function Psychometric() {
         <button className="mt-6 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
           Take a Psychometric Test
         </button>
+      </div>
       </div>
     </div>
   );

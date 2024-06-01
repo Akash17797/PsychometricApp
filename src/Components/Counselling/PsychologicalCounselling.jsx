@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import backgroundImage from '../Counselling/vision.jpg';
 
 const PsychologicalCounselling = () => {
-  const [expandedSection, setExpandedSection] = useState(null);
-
-  const toggleSection = (sectionIndex) => {
-    setExpandedSection(expandedSection === sectionIndex ? null : sectionIndex);
-  };
-
   const benefits = [
     {
       title: 'Coping with the Demands of Daily Life',
@@ -22,53 +17,44 @@ const PsychologicalCounselling = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-green-100 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
-          Psychological Counselling
-        </h1>
-        <p className="text-lg text-gray-700 mb-8">
-          In today's rapidly evolving world, the importance of psychological
-          counselling has become increasingly prominent. Psychological
-          counselling is a professional service that provides individuals with
-          the support, guidance, and tools necessary to navigate the complex
-          challenges and stresses of modern life.
-        </p>
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          The Benefits of Psychological Counselling in the Modern World
-        </h2>
-        <div className="space-y-6">
-          {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-lg p-6 cursor-pointer"
-              onClick={() => toggleSection(index)}
-            >
-              <div className="flex justify-between items-center">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center min-h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+      }}
+    >
+      <div className="flex w-full bg-opacity-15 rounded-2xl shadow-lg bg-white">
+        <div className="flex-none w-2/6 m-2">
+          <img src="\src\Components\images\career counselling.jpg" alt="vision" className="rounded-l-2xl h-full object-cover" />
+        </div>
+        <div className="flex-grow p-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            Psychological Counselling
+          </h1>
+          <p className="text-lg text-gray-700 mb-8">
+            In today's rapidly evolving world, the importance of psychological
+            counselling has become increasingly prominent. Psychological
+            counselling is a professional service that provides individuals with
+            the support, guidance, and tools necessary to navigate the complex
+            challenges and stresses of modern life.
+          </p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            The Benefits of Psychological Counselling in the Modern World
+          </h2>
+          <div className="space-y-6">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="bg-blue-100 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {benefit.title}
                 </h3>
-                <svg
-                  className={`h-6 w-6 text-gray-500 transform transition-transform duration-300 ${
-                    expandedSection === index ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                <p className="text-gray-700">
+                  {benefit.content}
+                </p>
               </div>
-              {expandedSection === index && (
-                <p className="text-gray-700 mt-4">{benefit.content}</p>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
