@@ -27,11 +27,11 @@ function Header() {
 
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="flex items-center justify-between bg-gradient-to-r from-teal-800 to-yellow-600 px-4 sm:px-6 lg:px-8 py-2.5">
+            <nav className="flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-800 px-4 sm:px-6 lg:px-8 py-2.5">
                 <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
-                            src="src\Components\images\Icon.jpg"
+                            src="src\Components\images\icon.png"
                             className="h-20 object-cover rounded-full w-20 mr-2 filter drop-shadow-lg"
                             alt="Logo"
                         />

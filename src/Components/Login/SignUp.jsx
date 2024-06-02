@@ -52,7 +52,7 @@ export default function SignUp() {
         backgroundPosition: 'center'
     }}
       >
-        <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+        <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md bg-white bg-opacity-80 p-4 rounded-xl">
           <div className="mb-2 flex justify-center">
             <svg
               width="50"
@@ -89,7 +89,7 @@ export default function SignUp() {
                 </label>
                 <div className="mt-2">
                   <input
-                    className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-gray-700 bg-transparent px-3 py-2 text-sm placeholder:text-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="text"
                     placeholder="Full Name"
                     id="fullName"
@@ -106,7 +106,7 @@ export default function SignUp() {
                 </label>
                 <div className="mt-2">
                   <input
-                    className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-gray-700 bg-transparent px-3 py-2 text-sm placeholder:text-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="email"
                     placeholder="Email"
                     id="email"
@@ -125,7 +125,7 @@ export default function SignUp() {
                 </div>
                 <div className="mt-2">
                   <input
-                    className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-gray-700 bg-transparent px-3 py-2 text-sm placeholder:text-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="password"
                     placeholder="Password"
                     id="password"

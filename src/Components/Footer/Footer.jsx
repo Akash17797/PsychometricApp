@@ -3,13 +3,13 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
-        <footer className="bg-gradient-to-r from-teal-800 to-yellow-600">
+        <footer className="bg-gradient-to-r from-teal-600 to-emerald-800">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="src\Components\images\Icon.jpg"
+                                src="src\Components\images\icon.png"
                                 className="mr-3 h-16 w-16 sm:h-32 sm:w-32 rounded-full filter drop-shadow-2xl"
                                 alt="Logo"
                             />

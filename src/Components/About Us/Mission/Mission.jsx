@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundImage from '../mission.jpg';
+import visionImage from '../Mission/IMG_20220315_131802.jpg';
 
 const Mission = () => {
   return (
@@ -11,7 +12,10 @@ const Mission = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className='max-w-5xl mx-auto bg-opacity-40 p-5 rounded-2xl bg-white'>
+      <div className="mx-2">
+        <img src={visionImage} alt="vision" className="rounded-2xl object-cover h-full w-full md:w-96" />
+      </div>
+      <div className="max-w-5xl mx-auto bg-opacity-40 p-5 rounded-2xl bg-white">
         <h1 className="text-4xl font-bold text-black mb-8">
           To Create Meaningful Impact Through Career Guidance and Counseling
         </h1>
@@ -24,12 +28,12 @@ const Mission = () => {
             The aim is to provide these individuals with high-quality, scientific career counseling and guidance that adds real value to their academic and professional endeavors. By leveraging expertise in career psychology, aptitude assessment, and mentorship, the mission is to help these individuals make informed, fulfilling choices about their studies and careers.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <MissionItem 
-              title="Underprivileged or Unaware Students" 
+            <MissionItem
+              title="Underprivileged or Unaware Students"
               description="Many students, especially those from disadvantaged backgrounds, lack access to robust career guidance resources. The mission is to reach these students and empower them to identify their strengths, interests, and best-fit academic and career options."
             />
-            <MissionItem 
-              title="Professionals at Career Crossroads" 
+            <MissionItem
+              title="Professionals at Career Crossroads"
               description="Even experienced professionals can find themselves uncertain about the next steps in their career development. The mission is to provide these individuals with personalized counseling to help them navigate career transitions, re-skilling, or reinvention."
             />
           </div>
