@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import Icon from '../images/icon.png'
 
 
 
@@ -31,7 +32,7 @@ function Header() {
                 <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
-                            src="src\Components\images\icon.png"
+                            src= {Icon}
                             className="h-20 object-cover rounded-full w-20 mr-2 filter drop-shadow-lg"
                             alt="Logo"
                         />
