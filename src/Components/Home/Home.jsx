@@ -28,6 +28,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import backgroundImage from '../images/backgroundImage.jpg'
+import Ramvir from '../images/ramvir.jpg'
 
 function Home() {
     return (
@@ -53,7 +54,7 @@ function Home() {
                     <h2 className="text-4xl font-bold mb-4">About Ramvir Singh</h2>
                     <p className="text-xl mb-8">Ramvir Singh is a renowned personal mentor and counsellor with over 17 years of experience in guiding individuals towards personal and professional growth. <br />M.A. (English & Psychology (Pursuing)) M.Ed (Guidance & Counselling) </p>
                     <div className="flex justify-center">
-                        <img src="src\Components\images\ramvir.jpg" alt="Ramvir Singh" className="rounded-full w-80 h-80 object-cover shadow-lg transform hover:scale-110 transition-transform" />
+                        <img src= {Ramvir} alt="Ramvir Singh" className="rounded-full w-80 h-80 object-cover shadow-lg transform hover:scale-110 transition-transform" />
                     </div>
                 </div>
             </section>
