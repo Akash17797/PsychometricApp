@@ -29,6 +29,10 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import backgroundImage from '../images/backgroundImage.jpg'
 import Ramvir from '../images/ramvir.jpg'
+import career from '../images/Career.jpg'
+import personality from '../images/personality.webp'
+import life from '../images/life.jpg'
+import Icon from '../images/icon.png'
 
 function Home() {
     return (
@@ -65,12 +69,12 @@ function Home() {
                     <h2 className="text-4xl font-bold mb-12 text-center">Services Offered</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src="src\Components\images\life.jpg" alt="Service 1" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src= {life} alt="Service 1" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Life Coaching</h3>
                             <p className="text-gray-600">Personalized guidance to help you achieve your life goals and overcome obstacles.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src="src\Components\images\personality.webp" alt="Service 2" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src= {personality} alt="Service 2" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Personality Development</h3>
                             <p className="text-gray-600">Empowering you to improve your skills, confidence, and personal growth for a better future.</p>
                         </div>
@@ -78,7 +82,7 @@ function Home() {
                             <NavLink 
                             to="./counselling/Career_Counselling">
                             
-                            <img src="src\Components\images\Career.jpg" alt="Service 3" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src={career} alt="Service 3" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Career Counseling</h3>
                             <p className="text-gray-600">Professional advice to help you navigate and advance in your career.</p>
                             </NavLink>
@@ -108,7 +112,7 @@ function Home() {
             <section className="py-16 bg-orange-500 text-white text-center animate-fadeIn">
                 <div className=" mx-auto flex">
                     <div className='w-2/6 m-2 '>
-                        <img src="src\Components\images\icon.png" alt="GZCL" className='rounded-xl'/>
+                        <img src= {Icon} alt="GZCL" className='rounded-xl'/>
                     </div>
                     <div className='p-20'>
                     <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Life?</h2>
