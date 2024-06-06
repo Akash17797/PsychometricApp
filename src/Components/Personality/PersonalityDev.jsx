@@ -1,6 +1,8 @@
 import React from 'react';
 import backgroundImage from '../images/counselling.jpg'; 
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import career from '../images/career counselling.jpg'
+
 
 const BenefitItem = ({ title, description }) => (
   <li className="hover:bg-green-100 transition bg-opacity-60 duration-300 ease-in-out hover:rounded-xl hover:p-2 transform hover:-translate-y-1 hover:scale-105">
@@ -43,41 +45,42 @@ function PersonalityDev() {
         backgroundPosition: 'center'
       }}
     > 
-    <div className='flex bg-blue-200 bg-opacity-55'>
-    <div className="flex-none w-2/6 m-2">
-          <img src="\src\Components\images\career counselling.jpg" alt="vision" className="rounded-l-2xl h-full object-cover" />
-        </div>
-      <div className="bg-opacity-60 p-8 rounded-2xl bg-white shadow-lg max-w-5xl w-full">
-        <h1 className="text-4xl font-bold text-center mb-8 text-green-900">
-          Personality Development
-        </h1>
-        <div className="space-y-6">
-          <p className="text-lg text-black font-bold">
-            In the ever-evolving landscape of the modern world, the importance of personal growth and development has become increasingly vital. Personality development, a multifaceted process of enhancing one's unique traits, attitudes, and behaviors, has emerged as a crucial tool for navigating the complexities of contemporary life.
-          </p>
-          <p className="text-lg text-black font-bold">
-            At its core, personality development is the journey of self-discovery and self-improvement, where individuals strive to uncover their true strengths, address their weaknesses, and cultivate a deeper understanding of their authentic selves. This process is not merely about acquiring new skills or knowledge; it's about fostering a profound transformation that can have a profound impact on an individual's personal and professional life.
-          </p>
-          <div>
-            <h2 className="text-2xl font-bold mb-4 text-green-900">The Benefits of Personality Development in the Modern World</h2>
-            <ul className="list-disc list-inside space-y-2">
-              {benefits.map((benefit, index) => (
-                <BenefitItem key={index} title={benefit.title} description={benefit.description} />
-              ))}
-            </ul>
+      <div className="bg-blue-200 bg-opacity-55 w-full mx-auto">
+        <div className="flex flex-col lg:flex-row bg-white bg-opacity-60 p-4 sm:p-8 rounded-2xl shadow-lg">
+          <div className="flex-none w-full lg:w-2/6 mb-4 lg:mb-0 lg:mr-4">
+            <img src= {career} alt="vision" className="rounded-lg lg:rounded-l-2xl h-full object-cover" />
           </div>
-          <p className="text-lg text-black font-bold">
-            In conclusion, in the modern world, where the pace of change and the demands on individuals can be overwhelming, the importance of personality development cannot be overstated. By embracing this transformative process, individuals can unlock a wealth of personal and professional benefits, from enhanced adaptability and success to improved mental and emotional well-being, and ultimately, the ability to positively impact the world around them.
-          </p>
+          <div className="w-full">
+            <h1 className="text-4xl font-bold text-center mb-8 text-green-900">
+              Personality Development
+            </h1>
+            <div className="space-y-6">
+              <p className="text-lg text-black font-bold">
+                In the ever-evolving landscape of the modern world, the importance of personal growth and development has become increasingly vital. Personality development, a multifaceted process of enhancing one's unique traits, attitudes, and behaviors, has emerged as a crucial tool for navigating the complexities of contemporary life.
+              </p>
+              <p className="text-lg text-black font-bold">
+                At its core, personality development is the journey of self-discovery and self-improvement, where individuals strive to uncover their true strengths, address their weaknesses, and cultivate a deeper understanding of their authentic selves. This process is not merely about acquiring new skills or knowledge; it's about fostering a profound transformation that can have a profound impact on an individual's personal and professional life.
+              </p>
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-green-900">The Benefits of Personality Development in the Modern World</h2>
+                <ul className="list-disc list-inside space-y-2">
+                  {benefits.map((benefit, index) => (
+                    <BenefitItem key={index} title={benefit.title} description={benefit.description} />
+                  ))}
+                </ul>
+              </div>
+              <p className="text-lg text-black font-bold">
+                In conclusion, in the modern world, where the pace of change and the demands on individuals can be overwhelming, the importance of personality development cannot be overstated. By embracing this transformative process, individuals can unlock a wealth of personal and professional benefits, from enhanced adaptability and success to improved mental and emotional well-being, and ultimately, the ability to positively impact the world around them.
+              </p>
+            </div>
+            <NavLink
+              to="/contact"
+              className="mt-6 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 block text-center"
+            >
+              Start Your Journey
+            </NavLink>
+          </div>
         </div>
-        <button className="mt-6 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-          
-          <NavLink 
-          to = "/contact">
-          Start Your Journey
-          </NavLink>
-        </button>
-      </div>
       </div>
     </div>
   );

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Icon from '../images/icon.png'
-
-
+import Icon from '../images/icon.png';
 
 function Header() {
     const [SubMenuOpen, setSubMenuOpen] = useState(false);
@@ -26,10 +24,17 @@ function Header() {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+        setSubMenuOpen(false);
+        setCounsellingSubMenuOpen(false);
+        setDevSubMenuOpen(false);
+    };
+
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="flex items-center justify-between bg-gradient-to-r from-teal-600 to-emerald-800 px-4 sm:px-6 lg:px-8 py-2.5">
-                <div className="flex items-center">
+            <div className="flex items-center">
                     <Link to="/" className="mr-4">
                         <img
                             src= {Icon}
@@ -61,18 +66,18 @@ function Header() {
                                 {SubMenuOpen && (
                                     <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
                                         <ul className="flex flex-col p-2 space-y-2">
-                                            <li className="hover:bg-gray-200 rounded-lg duration-500">
+                                            <li className="bg-gray-200 rounded-lg duration-500">
                                                 <NavLink
                                                     to="./about/vision"
-                                                    className="block px-4 py-2 text-white hover:text-red-600 duration-500"
+                                                    className="block px-4 py-2 text-gray-700 duration-500"
                                                 >
                                                     Vision
                                                 </NavLink>
                                             </li>
-                                            <li className="hover:bg-gray-200 rounded-lg duration-500">
+                                            <li className="bg-gray-200 rounded-lg duration-500">
                                                 <NavLink
                                                     to="./about/mission"
-                                                    className="block px-4 py-2 text-white hover:text-red-600 duration-500"
+                                                    className="block px-4 py-2 text-gray-700 duration-500"
                                                 >
                                                     Mission
                                                 </NavLink>
@@ -146,7 +151,7 @@ function Header() {
                             >
                                 <NavLink
                                     to="./Personality_Development"
-                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 "
                                 >
                                     Personality Development
                                 </NavLink>
@@ -168,7 +173,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./psychometric_testing"
-                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 "
                                 >
                                     Psychometric Testing
                                 </NavLink>
@@ -176,7 +181,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./drug_abuse"
-                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-600 lg:p-0 "
                                 >
                                     Drug Abuse
                                 </NavLink>
@@ -184,7 +189,7 @@ function Header() {
                             <li>
                                 <NavLink
                                     to="./contact"
-                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 lg:border-0 hover:text-red-600 lg:p-0 hover:underline hover:font-extrabold"
+                                    className="block py-2 pr-4 pl-3 duration-500 text-white border-b border-gray-100 lg:border-0 hover:text-red-600 lg:p-0 "
                                 >
                                     Contact
                                 </NavLink>
@@ -209,6 +214,7 @@ function Header() {
                     </div>
                     </div>
 
+                <div className="lg:hidden">
                 <button
                     onClick={toggleMenu}
                     className="lg:hidden text-gray-500 focus:outline-none focus:text-gray-700 duration-200 p-2 rounded-md border-2 border-transparent focus:ring-2 focus:ring-orange-700"
@@ -228,178 +234,222 @@ function Header() {
                         />
                     </svg>
                 </button>
+                </div>
             </nav>
+
             {isOpen && (
-                    <div className="lg:hidden">
-                        <ul className=" bg-blue-400 flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                            <li>
-                                <NavLink
-                                    to="./"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                >
-                                    Home
-                                </NavLink>
-                            </li>
-                            <li
-                                className="relative"
-                                onMouseEnter={handleSubMenuToggle}
-                                onMouseLeave={handleSubMenuToggle}
+                <div className="lg:hidden">
+                    <ul className="bg-blue-400 flex flex-col font-bold text-md lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li onClick={closeMenu}>
+                            <NavLink
+                                to="./"
+                                className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 px-4 duration-500 hover:text-red-500"
                             >
-                                <NavLink
-                                    to="./about"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                >
-                                    About Us
-                                </NavLink>
-                                {SubMenuOpen && (
-                                    <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
-                                        <ul className="flex flex-col p-2 space-y-2">
-                                            <li className="bg-gray-200 rounded-lg">
-                                                <NavLink
-                                                    to="./about/vision"
-                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700 hover:font-bold"
-                                                >
-                                                    Vision
-                                                </NavLink>
-                                            </li>
-                                            <li className="bg-gray-200 rounded-lg">
-                                                <NavLink
-                                                    to="./about/mission"
-                                                    className="block px-4 py-2 text-gray-700 hover:text-orange-700 hover:font-bold"
-                                                >
-                                                    Mission
-                                                </NavLink>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
-                            </li>
-                            <li
-                                className="relative"
-                                onMouseEnter={handleCounsellingSubMenuToggle}
-                                onMouseLeave={handleCounsellingSubMenuToggle}
+                                Home
+                            </NavLink>
+                        </li>
+                        <li className="flex justify-between items-center border-b">
+                            <NavLink
+                                to="./about"
+                                className="block py-2 pr-4 pl-3 text-white border-gray-100 lg:border-0 lg:p-0 px-4 duration-500 hover:text-red-500"
+                                onClick={closeMenu}
                             >
-                                <NavLink
-                                    to="./counselling"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                >
-                                    Counselling
-                                </NavLink>
-                                {counsellingSubMenuOpen && (
-                                    <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
-                                        <ul className="flex flex-col p-2 space-y-2 text-center ">
-                                            <li className="bg-gray-200 rounded-lg px-4 py-2">
-                                                <NavLink
-                                                    to="./counselling/educational_counselling"
-                                                    className=" block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                                >
-                                                    Educational Counselling
-                                                </NavLink>
-                                            </li>
-                                            <li className="bg-gray-200 rounded-lg px-4 py-2">
-                                                <NavLink
-                                                    to="./counselling/Career_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                                >
-                                                    Career Counselling
-                                                </NavLink>
-                                            </li>
-                                            <li className="bg-gray-200 rounded-lg px-4 py-2">
-                                                <NavLink
-                                                    to="./counselling/Psychological_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                                >
-                                                    Psychological Counselling
-                                                </NavLink>
-                                            </li>
-                                            <li className="bg-gray-200 rounded-lg px-4 py-2">
-                                                <NavLink
-                                                    to="./counselling/Behavioral_Counselling"
-                                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
-                                                >
-                                                    Behavioral Counselling
-                                                </NavLink>
-                                            </li>
-                                            <li className="bg-gray-200 rounded-lg px-4 py-2">
-                                                <NavLink
-                                                    to="./counselling/Marital_Counselling"
-                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0  hover:font-bold "
-                                                >
-                                                    Marital Counselling
-                                                </NavLink>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
-                            </li>
-
-                            <li
-                                className="relative"
-                                onMouseEnter={handleDevSubMenuToggle}
-                                onMouseLeave={handleDevSubMenuToggle}
+                                About Us
+                            </NavLink>
+                            <button
+                                className="text-white "
+                                onClick={handleSubMenuToggle}
                             >
-                                <NavLink
-                                    to="./Personality_Development"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
+                                <svg
+                                    className="w-5 h-5"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
                                 >
-                                    Personality Development
-                                </NavLink>
-                                {devSubMenuOpen && (
-                                    <div className="absolute bg-blue-300 rounded-2xl border-2 border-transparent py-2 z-10">
-                                        <ul className="flex flex-col p-2 space-y-2">
-                                            <li className="bg-gray-200 rounded-lg p-1">
-                                                <NavLink
-                                                    to="./Personality_Development/Coaching_&_Mentoring"
-                                                    className="w-52 block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 text-center hover:font-bold"
-                                                >
-                                                    Coaching & Mentoring
-                                                </NavLink>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="./psychometric_testing"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                        </li>
+                        {SubMenuOpen && (
+                            <ul className="pl-4">
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./about/vision"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Vision
+                                    </NavLink>
+                                </li>
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./about/mission"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Mission
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        )}
+                        <li className="flex justify-between items-center border-b">
+                            <NavLink
+                                to="./counselling"
+                                className="block py-2 pr-4 pl-3 text-white border-gray-100 lg:border-0 lg:p-0 px-4 duration-500 hover:text-red-500"
+                                onClick={closeMenu}
+                            >
+                                G&C
+                            </NavLink>
+                            <button
+                                className="text-white"
+                                onClick={handleCounsellingSubMenuToggle}
+                            >
+                                <svg
+                                    className="w-5 h-5"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
                                 >
-                                    Psychometric Testing
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="./drug_abuse"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:font-bold"
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                        </li>
+                        {counsellingSubMenuOpen && (
+                            <ul className="pl-4">
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./counselling/educational_counselling"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Educational Counselling
+                                    </NavLink>
+                                </li>
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./counselling/Career_Counselling"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Career Counselling
+                                    </NavLink>
+                                </li>
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./counselling/Psychological_Counselling"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Psychological Counselling
+                                    </NavLink>
+                                </li>
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./counselling/Behavioral_Counselling"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Behavioral Counselling
+                                    </NavLink>
+                                </li>
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./counselling/Marital_Counselling"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Marital Counselling
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        )}
+                        <li className="flex justify-between items-center border-b">
+                            <NavLink
+                                to="./Personality_Development"
+                                className="block py-2 pr-4 pl-3 text-white border-gray-100 lg:border-0 lg:p-0 px-4 duration-500 hover:text-red-500"
+                                onClick={closeMenu}
+                            >
+                                Personality Development
+                            </NavLink>
+                            <button
+                                className="text-white"
+                                onClick={handleDevSubMenuToggle}
+                            >
+                                <svg
+                                    className="w-5 h-5 "
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
                                 >
-                                    Drug Abuse
-                                </NavLink>
-                            </li>
-
-                            <li>
-                                <NavLink
-                                    to="./contact"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 hover:font-bold lg:p-0"
-                                >
-                                    Contact
-                                </NavLink>
-                            </li>
-                            <Link
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                        </li>
+                        {devSubMenuOpen && (
+                            <ul className="pl-4 ">
+                                <li onClick={closeMenu}>
+                                    <NavLink
+                                        to="./Personality_Development/Coaching_&_Mentoring"
+                                        className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                                    >
+                                        Coaching & Mentoring
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        )}
+                        <li onClick={closeMenu}>
+                            <NavLink
+                                to="./psychometric_testing"
+                                className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                            >
+                                Psychometric Testing
+                            </NavLink>
+                        </li>
+                        <li onClick={closeMenu}>
+                            <NavLink
+                                to="./drug_abuse"
+                                className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                            >
+                                Drug Abuse
+                            </NavLink>
+                        </li>
+                        <li onClick={closeMenu}>
+                            <NavLink
+                                to="./contact"
+                                className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0 duration-500 hover:text-red-500"
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
+                        <Link
                             to="./login"
-                            className="text-gray-900 hover:bg-red-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b hover:font-bold"
+                            className="text-white hover:bg-red-600 hover:text-white focus:ring-1 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b hover:font-bold"
                         >
                             Log in
                         </Link>
                         <Link
                             to="./signup"
-                            className="text-gray-900 hover:bg-red-600 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b hover:font-bold"
+                            className="text-white hover:bg-red-600 hover:text-white focus:ring-1 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none border-b hover:font-bold"
                         >
                             Sign Up
                         </Link>
-
-                        </ul>
-                    </div>
-                )}
+                    </ul>
+                </div>
+            )}
         </header>
     );
 }
