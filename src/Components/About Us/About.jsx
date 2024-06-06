@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundImage from '../About Us/vision.jpg';
+import Career from '../images/Career.jpg'
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
           <div className="flex justify-center  md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
             <img
               className="rounded-xl shadow-lg shadow-black transform hover:scale-105 transition-transform duration-300 animate-slideInLeft object-cover object-center"
-              src="src\Components\images\Career.jpg"
+              src= {Career}
               alt="Ramvir Singh"
             />
           </div>
