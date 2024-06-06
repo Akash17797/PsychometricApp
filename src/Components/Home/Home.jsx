@@ -38,7 +38,7 @@ function Home() {
     return (
         <div className="bg-gray-100 text-gray-800">
             {/* Hero Section */}
-            <section className="bg-cover bg-center h-screen" style={{ backgroundImage : `url(${backgroundImage})`}}>
+            <section className="bg-cover bg-center h-screen" style={{ backgroundImage: `url(${backgroundImage})` }}>
                 <div className="flex items-center justify-center h-full bg-black bg-opacity-50 animate-fadeIn">
                     <div className="text-center text-white">
                         <h1 className="text-5xl font-bold mb-4 animate-slideInDown">Ramvir Singh</h1>
@@ -58,7 +58,7 @@ function Home() {
                     <h2 className="text-4xl font-bold mb-4">About Ramvir Singh</h2>
                     <p className="text-xl mb-8">Ramvir Singh is a renowned personal mentor and counsellor with over 17 years of experience in guiding individuals towards personal and professional growth. <br />M.A. (English & Psychology (Pursuing)) M.Ed (Guidance & Counselling) </p>
                     <div className="flex justify-center">
-                        <img src= {Ramvir} alt="Ramvir Singh" className="rounded-full w-80 h-80 object-cover shadow-lg transform hover:scale-110 transition-transform" />
+                        <img src={Ramvir} alt="Ramvir Singh" className="rounded-full w-80 h-80 object-cover shadow-lg transform hover:scale-110 transition-transform" />
                     </div>
                 </div>
             </section>
@@ -69,22 +69,22 @@ function Home() {
                     <h2 className="text-4xl font-bold mb-12 text-center">Services Offered</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src= {life} alt="Service 1" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src={life} alt="Service 1" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Life Coaching</h3>
                             <p className="text-gray-600">Personalized guidance to help you achieve your life goals and overcome obstacles.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <img src= {personality} alt="Service 2" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                            <img src={personality} alt="Service 2" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
                             <h3 className="text-2xl font-bold mb-2">Personality Development</h3>
                             <p className="text-gray-600">Empowering you to improve your skills, confidence, and personal growth for a better future.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform">
-                            <NavLink 
-                            to="./counselling/Career_Counselling">
-                            
-                            <img src={career} alt="Service 3" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
-                            <h3 className="text-2xl font-bold mb-2">Career Counseling</h3>
-                            <p className="text-gray-600">Professional advice to help you navigate and advance in your career.</p>
+                            <NavLink
+                                to="./counselling/Career_Counselling">
+
+                                <img src={career} alt="Service 3" className="w-full h-48 object-cover mb-4 rounded animate-fadeIn" />
+                                <h3 className="text-2xl font-bold mb-2">Career Counseling</h3>
+                                <p className="text-gray-600">Professional advice to help you navigate and advance in your career.</p>
                             </NavLink>
                         </div>
                     </div>
@@ -110,21 +110,22 @@ function Home() {
 
             {/* Call to Action Section */}
             <section className="py-16 bg-orange-500 text-white text-center animate-fadeIn">
-                <div className=" mx-auto flex">
-                    <div className='w-2/6 m-2 '>
-                        <img src= {Icon} alt="GZCL" className='rounded-xl'/>
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:space-x-8 px-4">
+                    <div className="w-full lg:w-2/6 m-2">
+                        <img src={Icon} alt="GZCL" className="rounded-xl w-full h-auto" />
                     </div>
-                    <div className='p-20'>
-                    <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Life?</h2>
-                    <p className="text-xl mb-8">Join the thousands of people who have already transformed their lives with the help of Ramvir Singh.</p>
-                    <button className="px-8 py-3 bg-white text-orange-600 rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-transform">
+                    <div className="p-4 lg:p-20 text-center lg:text-left">
+                        <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Your Life?</h2>
+                        <p className="text-lg lg:text-xl mb-8">Join the thousands of people who have already transformed their lives with the help of Ramvir Singh.</p>
                         <NavLink to="./contact">
-                            Contact Us
+                            <button className="px-6 py-3 bg-white text-orange-600 rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-transform">
+                                Contact Us
+                            </button>
                         </NavLink>
-                    </button>
                     </div>
                 </div>
             </section>
+
         </div>
     );
 };
