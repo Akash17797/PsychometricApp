@@ -1,4 +1,5 @@
 import React from 'react';
+import vision from '../vision.jpg'
 import backgroundImage from '../vision.jpg'
 
 const Vision = () => {
@@ -12,7 +13,7 @@ const Vision = () => {
   }}
     >
       <div className='mx-2'>
-        <img src="\src\Components\images\career counselling.jpg" alt="vison" className='rounded-2xl'/>
+        <img src= {vision} alt="vison" className='rounded-2xl'/>
       </div>
       <div className="max-w-5xl mx-auto bg-opacity-40 p-5 rounded-2xl bg-white">
         <h1 className="text-4xl font-bold text-black mb-8">

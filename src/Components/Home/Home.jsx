@@ -33,6 +33,7 @@ import career from '../images/Career.jpg'
 import personality from '../images/personality.webp'
 import life from '../images/life.jpg'
 import Icon from '../images/icon.png'
+import ImageSlider from '../ImageSlider/ImageSlider';
 
 function Home() {
     return (
@@ -92,21 +93,7 @@ function Home() {
             </section>
 
             {/* Testimonials Section */}
-            <section className="py-16 px-4">
-                <div className="max-w-5xl mx-auto text-center">
-                    <h2 className="text-4xl font-bold mb-12">What People Say</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform animate-fadeIn">
-                            <p className="text-gray-600 mb-4">"kuch toh likhna hai idhar wo dekhenge kya likhna hai bt likhna jarur hai. haan bt likhna jarur hai"</p>
-                            <h3 className="text-xl font-bold">- Koi toh hu mai</h3>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform animate-fadeIn">
-                            <p className="text-gray-600 mb-4">"kuch toh likhna hai idhar wo dekhenge kya likhna hai bt likhna jarur hai. haan bt likhna jarur hai"</p>
-                            <h3 className="text-xl font-bold">- Mai bhi hu koi</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ImageSlider />
 
             {/* Call to Action Section */}
             <section className="py-16 bg-orange-500 text-white text-center animate-fadeIn">
