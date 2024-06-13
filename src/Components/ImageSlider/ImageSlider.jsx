@@ -36,7 +36,7 @@ const ImageSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show 1 slide on small screens
+    slidesToShow: 2, // Show 1 slide on small screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -70,10 +70,10 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="bg-blue-100 container mx-auto p-4 flex justify-center">
+    <div className="bg-blue-100 container mx-auto p-4 flex justify-around">
       <Slider {...settings} className="w-full h-96">
         {images.map((image, index) => (
-          <div key={index} className="px-2 h-96">
+          <div key={index} className="px-2 w-full h-96">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
