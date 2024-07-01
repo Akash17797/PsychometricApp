@@ -1,28 +1,29 @@
 import React from 'react';
-import vision from '../vision.jpg'
-import backgroundImage from '../vision.jpg'
+import vision from '../vision.jpg';
+import backgroundImage from '../vision.jpg';
 
 const Vision = () => {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 flex"
-    style={{
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center'
-  }}
+    <div
+      className="py-12 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
     >
-      <div className='mx-2'>
-        <img src= {vision} alt="vison" className='rounded-2xl'/>
+      <div className="md:w-1/3 w-full mb-8 md:mb-0">
+        <img src={vision} alt="vision" className="rounded-2xl w-full" />
       </div>
-      <div className="max-w-5xl mx-auto bg-opacity-40 p-5 rounded-2xl bg-white">
-        <h1 className="text-4xl font-bold text-black mb-8">
+      <div className="max-w-5xl w-full mx-auto bg-opacity-80 p-5 rounded-2xl bg-white">
+        <h1 className="text-2xl md:text-4xl font-bold text-black mb-8 text-center md:text-left">
           To Create Meaningful Impact Through Career Guidance and Counseling
         </h1>
 
-        <div className=" rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-3xl font-bold text-black mb-6">Vision</h2>
-          <p className="text-lg text-black font-bold mb-4">
+        <div className="rounded-lg shadow-lg p-8 mb-8">
+          <h2 className="text-xl md:text-3xl font-bold text-black mb-6">Vision</h2>
+          <p className="text-base md:text-lg text-black font-bold mb-4">
             Our vision is to empower every student and working professional to make informed, fulfilling choices about their educational and career paths. We aim to achieve this through a scientifically-driven yet empathetic methodology that prioritizes long-term success and happiness.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -39,8 +40,8 @@ const Vision = () => {
 const VisionItem = ({ title, description }) => {
   return (
     <div className="bg-yellow-200 bg-opacity-60 p-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-      <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-900 ">{description}</p>
+      <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{title}</h3>
+      <p className="text-gray-900 text-sm md:text-base">{description}</p>
     </div>
   );
 };
@@ -61,7 +62,3 @@ const visionItems = [
 ];
 
 export default Vision;
-
-
-
-
