@@ -63,21 +63,21 @@ const ImageSlider = () => {
       {
         breakpoint: 1280, // Tailwind's xl breakpoint (1280px)
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
   };
 
   return (
-    <div className="bg-blue-100 container mx-auto p-4 flex justify-around">
-      <Slider {...settings} className="w-full h-96">
+    <div className="bg-gray-200 container mx-auto p-4 flex justify-around">
+      <Slider {...settings} className="w-full h-96 ">
         {images.map((image, index) => (
-          <div key={index} className="px-2 w-full h-96">
+          <div key={index} className="px-2 w-full h-96 ">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-96 object-contain transition-opacity duration-500 ease-in-out slick-center:opacity-200 slick-center:scale-100 slick-active:opacity-50 slick-active:scale-75"
+              className=" w-full h-96 object-contain transition-opacity duration-500 ease-in-out slick-center:opacity-200 slick-center:scale-100 slick-active:opacity-50 slick-active:scale-75"
             />
           </div>
         ))}

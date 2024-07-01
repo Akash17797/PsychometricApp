@@ -14,10 +14,10 @@ const About = () => {
     >
       <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div className="flex flex-col md:flex-row md:gap-6">
-          <div className="flex justify-center  md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
+          <div className="flex justify-center md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
             <img
               className="rounded-xl shadow-lg shadow-black transform hover:scale-105 transition-transform duration-300 animate-slideInLeft object-cover object-center"
-              src= {Career}
+              src= {Career }
               alt="Ramvir Singh"
             />
           </div>
