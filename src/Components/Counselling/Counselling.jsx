@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundImage from '../Counselling/vision.jpg';
+import image from '../images/Coaching&Mentoring.jpg'
 
 const Counselling = () => {
   return (
@@ -13,7 +14,7 @@ const Counselling = () => {
     >
       <div className="flex flex-col md:flex-row w-full bg-opacity-80 rounded-2xl shadow-lg bg-white max-w-5xl">
         <div className="flex-none w-full md:w-2/6 m-2">
-          <img src="\src\Components\images\career counselling.jpg" alt="vision" className="rounded-t-2xl md:rounded-l-2xl md:rounded-t-none h-64 md:h-full w-full object-cover" />
+          <img src={image} alt="vision" className="rounded-t-2xl md:rounded-l-2xl md:rounded-t-none h-64 md:h-full w-full object-cover" />
         </div>
         <div className="flex-grow p-8">
           <h1 className="text-2xl md:text-4xl font-bold text-indigo-900 mb-8 text-center underline">Guidance & Counselling: An Overview</h1>
